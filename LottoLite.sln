@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30110.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LottoLite.Web", "LottoLite.Web\LottoLite.Web.csproj", "{30D4CBB6-F55A-4BD5-8A17-9BDCF54D4223}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LottoLite.Tests", "LottoLite.Tests\LottoLite.Tests.csproj", "{9C0518BA-E8B0-4A3C-BDEE-73B4D533D8A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LottoLite.Repository", "LottoLite.Repository\LottoLite.Repository.csproj", "{4ED71AB5-16CA-4B04-9940-AF0BADFEBC32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LottoLite.Services", "LottoLite.Services\LottoLite.Services.csproj", "{ABFB3BC9-5391-46E8-B081-D4661219B827}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LottoLite.Interfaces", "LottoLite.Interfaces\LottoLite.Interfaces.csproj", "{00A37B5B-2DB6-453F-BC10-579C63F3F591}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LottoLite.Entities", "LottoLite.Entities\LottoLite.Entities.csproj", "{8E33AFF5-4D8D-45BD-A8D5-2CEC154A1372}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{30D4CBB6-F55A-4BD5-8A17-9BDCF54D4223}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30D4CBB6-F55A-4BD5-8A17-9BDCF54D4223}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30D4CBB6-F55A-4BD5-8A17-9BDCF54D4223}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30D4CBB6-F55A-4BD5-8A17-9BDCF54D4223}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C0518BA-E8B0-4A3C-BDEE-73B4D533D8A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C0518BA-E8B0-4A3C-BDEE-73B4D533D8A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C0518BA-E8B0-4A3C-BDEE-73B4D533D8A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C0518BA-E8B0-4A3C-BDEE-73B4D533D8A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4ED71AB5-16CA-4B04-9940-AF0BADFEBC32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4ED71AB5-16CA-4B04-9940-AF0BADFEBC32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4ED71AB5-16CA-4B04-9940-AF0BADFEBC32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4ED71AB5-16CA-4B04-9940-AF0BADFEBC32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABFB3BC9-5391-46E8-B081-D4661219B827}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABFB3BC9-5391-46E8-B081-D4661219B827}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABFB3BC9-5391-46E8-B081-D4661219B827}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABFB3BC9-5391-46E8-B081-D4661219B827}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00A37B5B-2DB6-453F-BC10-579C63F3F591}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00A37B5B-2DB6-453F-BC10-579C63F3F591}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00A37B5B-2DB6-453F-BC10-579C63F3F591}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00A37B5B-2DB6-453F-BC10-579C63F3F591}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E33AFF5-4D8D-45BD-A8D5-2CEC154A1372}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E33AFF5-4D8D-45BD-A8D5-2CEC154A1372}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E33AFF5-4D8D-45BD-A8D5-2CEC154A1372}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E33AFF5-4D8D-45BD-A8D5-2CEC154A1372}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,73 @@
+﻿@{
+    ViewBag.Title = "Lotto Lite!";
+}
+
+
+
+<div class="row">
+    <div class="col-md-12" data-ng-app="newDraw" data-ng-controller="drawCtrl" data-api-endpoint="@Url.RouteUrl("DefaultApi", new { httproute = "", controller = "LotteryDraws" })">
+
+        <h2>New Draw</h2>
+        <p>
+            <div class="alert alert-success" data-ng-show="saveSuccess">
+                Saved!
+            </div>
+            <div class="alert alert-danger" data-ng-show="saveFailed">
+                Save failed!
+                <ul>
+                    <li data-ng-repeat="error in saveErrors">
+                        {{error}}
+                    </li>
+                </ul>
+            </div>
+
+            <label>Draw Name:</label> <input type="text" class="input-sm" data-ng-model="draw.name" /><br />
+            <label>Description:</label> <input type="text" class="input-sm" data-ng-model="draw.description" /><br />
+            <label>Date:</label> <input type="text" class="input-sm" data-ng-model="draw.dateOfDraw" placeholder="dd/mm/yyyy" /><br />
+            <br />
+            <label>Total amount of primary numbers:</label> <input type="number" class="input-sm" data-ng-model="draw.totalPrimaryNumbers" /><br />
+            <label>Range of primary numbers:</label>
+            <input type="number" class="input-sm" data-ng-model="draw.primaryNumbersMin" placeholder="From" />
+            - <input type="number" class="input-sm" data-ng-model="draw.primaryNumbersMax" placeholder="To" /><br />
+            <br />
+            <label>Total amount of secondary numbers:</label> <input type="number" class="input-sm" data-ng-model="draw.totalSecondaryNumbers" /><br />
+            <label>Range of secondary numbers:</label>
+            <input type="number" class="input-sm" data-ng-model="draw.secondaryNumbersMin" placeholder="From" />
+            - <input type="number" class="input-sm" data-ng-model="draw.secondaryNumbersMax" placeholder="To" /><br />
+
+        </p>
+        <p><button class="btn btn-default" data-ng-click="save()">Save</button></p>
+    </div>
+    <hr />
+    <div class="col-md-12" id="winningNumbers" data-ng-app="winningNumbers" data-ng-controller="winningNumbersCtrl" data-api-endpoint="@Url.RouteUrl("DefaultApi", new { httproute = "", controller = "WinningNumbers" })">
+        <h2>Winning Numbers</h2>
+
+        <div class="alert alert-success" data-ng-show="saveSuccess">
+            Saved!
+        </div>
+        <div class="alert alert-danger" data-ng-show="saveFailed">
+            Save failed!
+            <ul>
+                <li data-ng-repeat="error in saveErrors">
+                    {{error}}
+                </li>
+            </ul>
+        </div>
+
+        <label>Draw Name:</label> <input type="text" class="input-sm" data-ng-model="winningNums.drawName" /><br /><br />
+        <label>Primary Numbers:</label>
+        <input type="number" class="input-sm" data-ng-model="winningNums.primaryFirst" />
+        <input type="number" class="input-sm" data-ng-model="winningNums.primarySecond" />
+        <input type="number" class="input-sm" data-ng-model="winningNums.primaryThird" />
+        <input type="number" class="input-sm" data-ng-model="winningNums.primaryFourth" />
+        <input type="number" class="input-sm" data-ng-model="winningNums.primaryFifth" />
+        <br /><br />
+        <label>Secondary Numbers:</label>
+        <input type="number" class="input-sm" data-ng-model="winningNums.secondaryFirst" />
+        <input type="number" class="input-sm" data-ng-model="winningNums.secondarySecond" />
+
+        <p><button class="btn btn-default" data-ng-click="save()">Save</button></p>
+    </div>
+
+    @Scripts.Render("~/bundles/apps")
+</div>
